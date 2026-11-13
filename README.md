@@ -33,7 +33,7 @@ src/
     logo.js         later
 vendor/             pinned third-party libraries (opentype.js 1.3.4)
 fonts/              bundled .woff files (SIL Open Font License, from Fontsource)
-docs/prd.md         requirements and build order
+docs/               local-only notes (gitignored, not in the repo)
 AGENTS.md           instructions for AI agents working in this repo
 CLAUDE.md           points Claude Code at AGENTS.md
 ```
@@ -43,3 +43,7 @@ Serving over HTTP is required because fonts are fetched at startup. Exported SVG
 ## Extending it
 
 It is one app with several modes (Monogram first; Icon and Logo later), switched from inside the UI. All modes share the same preview, color and export code. To add a mode, create `src/modes/<name>.js` and register it; see `AGENTS.md` for the rules.
+
+## License
+
+MIT, see [`LICENSE`](LICENSE). Bundled fonts in `fonts/` are under the SIL Open Font License; opentype.js in `vendor/` is MIT.
