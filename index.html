@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>mark-maker</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>mark-maker</h1>
+    <nav id="modes" aria-label="Mode"></nav>
+  </header>
+  <main class="layout">
+    <aside id="controls" class="panel" aria-label="Controls"></aside>
+    <section class="stage">
+      <div id="preview" class="preview" role="img" aria-label="Mark preview"></div>
+      <div class="export">
+        <button id="dl-svg">Download SVG</button>
+        <select id="png-size" aria-label="PNG size"></select>
+        <button id="dl-png">Download PNG</button>
+      </div>
+    </section>
+  </main>
+  <script src="vendor/opentype.min.js"></script>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
